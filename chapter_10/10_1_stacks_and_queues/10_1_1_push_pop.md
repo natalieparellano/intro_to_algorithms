@@ -3,7 +3,7 @@
 **Thoughts:** it would be nice to try to do this in C. I am thinking something like this:
 
 1. Initialize an array of integers `S` with size 6 
-1. Initialize an integer variable `top` to keep track of S.top (to hold the index of the top element, if it exists) 
+1. Initialize an integer variable `top` to keep track of `S.top` (to hold the index of the top element, if it exists) 
 1. To illustrate `PUSH( S, 4 )`, set `top = top+1`, then `S[top] = 4`
   * First check if the stack is full (does `top` equal the length of `S` minus one?)
   * My natural inclination is to do `S[top+1] = 4`, then `top = top+1` ...I don't think it makes any practical difference, but for other data structures the order might be important 
