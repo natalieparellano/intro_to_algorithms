@@ -12,6 +12,10 @@
   * `top = top-1`
   * `S[top+1]` is the element that was popped off the stack 
 
+Thus we end up with `[4, 1, 8]` in the stack, with `top == 1`, pointing to the element `1`. 
+
+**Further Work**
+
 This can all be done "statically" at first...maybe printing the values in the array and the value of `top` at each step. 
 
 Eventually, it would be nice to abstract this into functions so that, given a starting array, we can ask the user to input directions via the command line and print the changes or return an error if the action would cause an overflow or underflow. 
