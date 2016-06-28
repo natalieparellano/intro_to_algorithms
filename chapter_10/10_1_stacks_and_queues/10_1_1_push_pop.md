@@ -12,10 +12,10 @@
   * `top = top-1`
   * `S[top+1]` is the element that was popped off the stack 
 
-Thus we end up with `[4, 1, 8]` in the stack, with `top == 1`, pointing to the element `1`. 
+Thus we end up with `[4, 1, 8, X, X, X]` in the stack, with `top == 1`, pointing to the element `1`. `X` represents values in the array that are present when the memory is allocated - they could be anything, when I tried the numbers were `0` or random. 
 
 **Further Work**
 
-This can all be done "statically" at first...maybe printing the values in the array and the value of `top` at each step. 
+I tried to get a "static" version of this going in C, so that it would print the values in the array at each step along with the value of `top`. It does work, but it is a little bit ugly - since I don't yet know how to declare functions and use them elsewhere, I couldn't abstract away repetitive work like printing the array. It might be better to complete a basic primer before going further. 
 
-Eventually, it would be nice to abstract this into functions so that, given a starting array, we can ask the user to input directions via the command line and print the changes or return an error if the action would cause an overflow or underflow. 
+Eventually, it would be nice to make the program interactive so that, given a starting array, we can ask the user to input directions via the command line and print the changes or return an error if the action would cause the stack to overflow or underflow. 
