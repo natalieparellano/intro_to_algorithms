@@ -1,0 +1,3 @@
+**Problem:** explain how to implement two stacks in one array `A[1..n]` in such a way that neither stack overflows unless the total number of elements in both stacks together is `n`. The `PUSH` and `POP` operations should run in `O(1)` time. 
+
+**Thoughts:** I haven't written this out in pseudo-code yet, but I am guessing that the way to go about this would be to fill up the array from either end, with elements in `S1` being added from the left and elements from `S2` being added from the right. There would be two pointers, for keeping track of `S1.top` and `S2.top`. Every time we `PUSH`, there would need to be a check that the pointer for the other stack doesn't overlap the index of the slot we are trying to push into. 
