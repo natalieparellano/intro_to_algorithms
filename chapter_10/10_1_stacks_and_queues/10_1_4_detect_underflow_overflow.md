@@ -6,7 +6,7 @@
 
 ```
 ENQUEUE( Q, x )
-if (( Q.tail - Q.head ) % Q.length ) == 1 // Queue is full
+if (( Q.head - Q.tail ) % Q.length ) == 1 // Queue is full
   error "overflow"
 else 
   Q[Q.tail] = x
