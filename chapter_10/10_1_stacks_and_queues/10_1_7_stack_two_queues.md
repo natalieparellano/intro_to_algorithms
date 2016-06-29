@@ -1,0 +1,3 @@
+**Problem:** show how to implement a stack using two queues. Analyze the running time of the stack operations. 
+
+**Thoughts:** pushing an element onto the stack is straightforward as it is the same as enqueuing the element, and takes `O(1)` time. To pop an element off of the stack, we would need to dequeue all of the elements in front of it and enqueue them onto the other stack...this takes `O(n)` time. Unlike a queue implemented with two stacks, it is not possible to pop multiple elements in succession. 
